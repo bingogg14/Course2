@@ -1,0 +1,3 @@
+LogicTests.LogicTest.AddingHotel
+LogicTests.LogicTest.AddingHotelRoomToHotel
+LogicTests.LogicTest.TryLoadHotelFromReservation

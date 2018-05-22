@@ -11,7 +11,7 @@ namespace DAL.Entities
     public class HotelRoomReservation
     {
         public HotelRoomReservation() { }
-        public HotelRoomReservation(HotelRoom HotelRoom, string ClientName, string ClientSurname)
+        public HotelRoomReservation(HotelRoom HotelRoom, string ClientName, string ClientSurname, DateTimeOffset ArrivalDate, DateTimeOffset DepartureDate)
         {
             HotelName = HotelRoom.Hotel.Name;
             HotelStars = HotelRoom.Hotel.Stars;
@@ -21,6 +21,8 @@ namespace DAL.Entities
             HotelRoomPrice = HotelRoom.Price;
             this.ClientName = ClientName;
             this.ClientSurname = ClientSurname;
+            this.ArrivalDate = ArrivalDate;
+            this.DepartureDate = DepartureDate;
         }
 
         public int Id { get; set; }
@@ -32,5 +34,8 @@ namespace DAL.Entities
         public int HotelRoomPrice { get; set; }
         public string ClientName { get; set; }
         public string ClientSurname { get; set; }
+        public DateTimeOffset ArrivalDate { get; set; }
+        public DateTimeOffset DepartureDate { get; set; }
+
     }
 }

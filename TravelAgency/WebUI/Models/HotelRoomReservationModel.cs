@@ -8,19 +8,6 @@ namespace WebUI.Models
 {
     public class HotelRoomReservationModel
     {
-        public HotelRoomReservationModel() { }
-        public HotelRoomReservationModel(HotelRoomModel HotelRoom, string ClientName, string ClientSurname)
-        {
-            HotelName = HotelRoom.Hotel.Name;
-            HotelStars = HotelRoom.Hotel.Stars;
-            HotelAddress = HotelRoom.Hotel.Address;
-            HotelRoomNumber = HotelRoom.Number;
-            HotelRoomSleepingPlaces = HotelRoom.SleepingPlaces;
-            HotelRoomPrice = HotelRoom.Price;
-            this.ClientName = ClientName;
-            this.ClientSurname = ClientSurname;
-        }
-
         public int Id { get; set; }
         public string HotelName { get; set; }
         public int HotelStars { get; set; }
@@ -30,5 +17,7 @@ namespace WebUI.Models
         public int HotelRoomPrice { get; set; }
         public string ClientName { get; set; }
         public string ClientSurname { get; set; }
+        public DateTimeOffset ArrivalDate { get; set; }
+        public DateTimeOffset DepartureDate { get; set; }
     }
 }

@@ -8,12 +8,22 @@ using Logic.DTOs;
 using Logic;
 using WebUI.Models;
 using AutoMapper;
+using WebUI.Ninject;
 
 namespace WebUI.Controllers
 {
     public class TransportController : ApiController
     {
-        TransportLogic TransportLogic = new TransportLogic();
+        public TransportController()
+        {
+            TransportLogic = UIDependencyResolver<ITransportLogic>.ResolveDependency();
+        }
+        public TransportController(ITransportLogic TransportLogic)
+        {
+            this.TransportLogic = TransportLogic;
+        }
+
+        ITransportLogic TransportLogic;
 
         IMapper TransportControllerMapper = new MapperConfiguration(cfg =>
             {

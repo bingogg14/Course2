@@ -10,15 +10,6 @@ namespace DAL.Entities
 {
     public class TransportPlace
     {
-        public TransportPlace() { }
-        public TransportPlace(Transport Transport, int Number, int Price)
-        {
-            this.Transport = Transport;
-            this.Number = Number;
-            this.Price = Price;
-            IsBooked = false;
-        }
-
         public int Id { get; set; }
         [ForeignKey("TransportId")]
         public virtual Transport Transport { get; set; }

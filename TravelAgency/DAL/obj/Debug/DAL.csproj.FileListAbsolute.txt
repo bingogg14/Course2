@@ -8,15 +8,23 @@ C:\Users\vekli\Desktop\Архітектура та проектування ПЗ
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\DAL\obj\Debug\DAL.dll
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\DAL\obj\Debug\DAL.pdb
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\DAL.dll.config
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\DAL.dll
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\DAL.pdb
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\EntityFramework.dll
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\EntityFramework.xml
-C:\Users\bingo\Desktop\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\bingo\Desktop\TravelAgency\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-C:\Users\bingo\Desktop\TravelAgency\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\bingo\Desktop\TravelAgency\DAL\obj\Debug\DAL.csproj.CopyComplete
-C:\Users\bingo\Desktop\TravelAgency\DAL\obj\Debug\DAL.dll
-C:\Users\bingo\Desktop\TravelAgency\DAL\obj\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\obj\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\obj\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\DAL.dll.config
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\DAL.dll.config
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\obj\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\DAL\obj\Debug\DAL.pdb

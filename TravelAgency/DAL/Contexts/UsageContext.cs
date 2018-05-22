@@ -10,7 +10,7 @@ namespace DAL
 {
     public class UsageContext : DbContext
     {
-        public UsageContext() { }
+        public UsageContext():base("UsageContext") { }
         public DbSet<User> Users { get; set; }
         public DbSet<HotelRoomReservation> HotelRoomReservations { get; set; }
         public DbSet<TransportTicket> TransportTickets { get; set; }

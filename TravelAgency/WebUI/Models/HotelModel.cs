@@ -8,14 +8,6 @@ namespace WebUI.Models
 {
     public class HotelModel
     {
-        public HotelModel() { }
-        public HotelModel(string Name, int Stars, string Address)
-        {
-            this.Name = Name;
-            this.Stars = Stars;
-            this.Address = Address;
-            Rooms = new List<HotelRoomModel>();
-        }
         public int Id { get; set; }
         public string Name { get; set; }
         public int Stars { get; set; }

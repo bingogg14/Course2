@@ -9,17 +9,7 @@ namespace DAL.Entities
     public enum UserType { Administrator, Manager, User }
     public class User
     {
-        public User() {}
-        public User(string Name, UserType UserType, string Surname, string Login, string Password)
-        {
-            this.Name = Name;
-            this.UserType = UserType;
-            this.Surname = Surname;
-            this.Login = Login;
-            this.Password = Password;
-        }
         public int Id { get; set; }
-
         public string Name { get; set; }
         public UserType UserType { get; set; }
         public string Surname { get; set; }

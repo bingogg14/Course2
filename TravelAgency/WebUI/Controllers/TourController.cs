@@ -8,12 +8,22 @@ using Logic.DTOs;
 using Logic;
 using WebUI.Models;
 using AutoMapper;
+using WebUI.Ninject;
 
 namespace WebUI.Controllers
 {
     public class TourController : ApiController
     {
-        TourLogic TourLogic = new TourLogic();
+        public TourController()
+        {
+            this.TourLogic = UIDependencyResolver<ITourLogic>.ResolveDependency();
+        }
+        public TourController(ITourLogic TourLogic)
+        {
+            this.TourLogic = TourLogic;
+        }
+
+        ITourLogic TourLogic;
 
         IMapper TourControllerMapper = new MapperConfiguration(cfg =>
             {

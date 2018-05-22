@@ -10,8 +10,17 @@ namespace Logic
     public interface ITourLogic
     {
         void AddTour(TourDTO NewTour);
-        void EditTour(TourDTO NewTour);
+        void EditTour(int Id, TourDTO Tour);
         IEnumerable<TourDTO> GetAllToursTemplates();
-
+        TourDTO GetTour(int Id);
+        void DeleteTour(int Id);
+        IEnumerable<TourDTO> FindTourTemplatesByPrice(int MinPrice, int MaxPrice);
+        IEnumerable<TourDTO> FindTourTemplatesByType(string Type);
+        IEnumerable<TourDTO> FindTourTemplatesByCity(string City);
+        IEnumerable<TourDTO> FindTourTemplatesByCountry(string Country);
+        IEnumerable<TourDTO> FindTourTemplatesByDuration(int MinDuration, int MaxDuration);
+        IEnumerable<TourDTO> GetAllToursTemplatesOrderedByPrice();
+        IEnumerable<TourDTO> GetAllToursTemplatesOrderedByDuration();
+        IEnumerable<TourDTO> GetAllToursTemplatesOrderedByCountry()
     }
 }

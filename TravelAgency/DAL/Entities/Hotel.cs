@@ -8,14 +8,6 @@ namespace DAL.Entities
 {
     public class Hotel
     {
-        public Hotel() { }
-        public Hotel(string Name, int Stars, string Address)
-        {
-            this.Name = Name;
-            this.Stars = Stars;
-            this.Address = Address;
-            Rooms = new List<HotelRoom>();
-        }
         public int Id { get; set; }
         public string Name { get; set; }
         public int Stars { get; set; }

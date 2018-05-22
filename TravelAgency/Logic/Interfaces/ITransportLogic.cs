@@ -11,5 +11,7 @@ namespace Logic
     {
         void AddTransport(TransportDTO NewTransport, int AvailibleSeats, int PriceForTicket);
         IEnumerable<TransportDTO> GetAllTransport();
+        TransportDTO GetTransport(int Id);
+        void DeleteTransport(int Id);
     }
 }

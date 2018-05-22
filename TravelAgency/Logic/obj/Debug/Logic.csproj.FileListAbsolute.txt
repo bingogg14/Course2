@@ -9,3 +9,31 @@ C:\Users\vekli\Desktop\Архітектура та проектування ПЗ
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\Logic\bin\Debug\EntityFramework.xml
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\Logic\obj\Debug\Logic.dll
 C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\Logic\obj\Debug\Logic.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\Logic\bin\Debug\Ninject.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency\Logic\bin\Debug\Ninject.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\Logic.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\Logic.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\AutoMapper.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\Ninject.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\EntityFramework.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\AutoMapper.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\Ninject.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\bin\Debug\EntityFramework.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\obj\Debug\Logic.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) With hotelrooms reservation by day\TravelAgency\Logic\obj\Debug\Logic.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\Logic.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\Logic.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\AutoMapper.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\DAL.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\Ninject.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\EntityFramework.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\DAL.pdb
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\AutoMapper.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\Ninject.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\bin\Debug\EntityFramework.xml
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\obj\Debug\Logic.dll
+C:\Users\vekli\Desktop\Архітектура та проектування ПЗ\TravelAgency History\v0.1.3(19.05 20.50) Reservation by day\TravelAgency\Logic\obj\Debug\Logic.pdb

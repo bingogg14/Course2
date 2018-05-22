@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Logic.DTOs
 {
     public class TransportPlaceDTO
@@ -19,9 +20,9 @@ namespace Logic.DTOs
 
         public int Id { get; set; }
         public virtual TransportDTO Transport { get; set; }
+        public int TransportId { get; set; }
         public int Number { get; set; }
         public int Price { get; set; }
         public bool IsBooked { get; set; }
-
     }
 }

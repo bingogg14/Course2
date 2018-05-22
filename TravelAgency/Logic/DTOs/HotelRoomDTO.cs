@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,16 +14,15 @@ namespace Logic.DTOs
             this.Number = Number;
             this.SleepingPlaces = SleepingPlaces;
             this.Price = Price;
-            IsBooked = false;
+            BookedDays = new List<DateTimeOffset>();
         }
 
         public int Id { get; set; }
         public int HotelId { get; set; }
-        [ForeignKey("HotelId")]
         public virtual HotelDTO Hotel { get; set; }
         public int Number { get; set; }
         public int SleepingPlaces { get; set; }
         public int Price { get; set; }
-        public bool IsBooked { get; set; }
+        public List<DateTimeOffset> BookedDays { get; set; }
     }
 }

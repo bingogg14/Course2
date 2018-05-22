@@ -9,15 +9,15 @@ namespace DAL
 {
     public interface IUnitOfWork : IDisposable
     {
-        /*IRepository<Hotel> Hotels { get; set; }
-        IRepository<HotelRoom> HotelsRooms { get; set; }
-        IRepository<Tour> ToursTemplates { get; set; }
-        IRepository<Transport> Transports { get; set; }
+        IRepository<Hotel> Hotels { get; }
+        IRepository<HotelRoom> HotelsRooms { get; }
+        IRepository<Tour> ToursTemplates { get; }
+        IRepository<Transport> Transports { get; }
 
-        IRepository<User> Users { get; set; }
-        IRepository<Tour> OrderedTours { get; set; }
-        IRepository<HotelRoomReservation> HotelsRoomsReservations { get; set; }
-        IRepository<TransportPlace> TransportsPlace { get; set; }*/
+        IRepository<User> Users { get; }
+        IRepository<Tour> OrderedTours { get; }
+        IRepository<HotelRoomReservation> HotelsRoomsReservations { get; }
+        IRepository<TransportPlace> TransportsPlace { get; }
 
         void DeleteDB();
     }

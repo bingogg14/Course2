@@ -9,18 +9,6 @@ namespace DAL.Entities
 {
     public class Tour
     {
-        public Tour() { }
-        public Tour(string Name, int Price, string Type, string Country, string City, int Duration, string Description)
-        {
-            this.Name = Name;
-            this.Price = Price;
-            this.Type = Type;
-            this.Country = Country;
-            this.City = City;
-            this.Duration = Duration;
-            this.Description = Description;
-        }
-
         public int Id { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }

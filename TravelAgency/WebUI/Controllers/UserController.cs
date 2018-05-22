@@ -8,12 +8,22 @@ using Logic.DTOs;
 using Logic;
 using WebUI.Models;
 using AutoMapper;
+using WebUI.Ninject;
 
 namespace WebUI.Controllers
 {
     public class UserController : ApiController
     {
-        UserLogic UserLogic = new UserLogic();
+        public UserController()
+        {
+            this.UserLogic = UIDependencyResolver<IUserLogic>.ResolveDependency();
+        }
+        public UserController(IUserLogic UserLogic)
+        {
+            this.UserLogic = UserLogic;
+        }
+
+        IUserLogic UserLogic;
 
         IMapper UserControllerMapper = new MapperConfiguration(cfg =>
         {

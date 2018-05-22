@@ -59,12 +59,11 @@
     <Compile Include="Entities\TransportPlace.cs" />
     <Compile Include="Entities\TransportTicket.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="GenericRepository.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Contexts\UsageContext.cs" />
-    <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

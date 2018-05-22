@@ -8,20 +8,6 @@ namespace WebUI.Models
 {
     public class TransportTicketModel
     {
-        public TransportTicketModel() { }
-        public TransportTicketModel(TransportPlaceModel TransportPlace, string PassangerName, string PassangerSurname)
-        {
-            TransportType = TransportPlace.Transport.Type;
-            DeparturePoint = TransportPlace.Transport.DeparturePoint;
-            DepartureTime = TransportPlace.Transport.DepartureTime;
-            ArrivalPoint = TransportPlace.Transport.ArrivalPoint;
-            ArrivalTime = TransportPlace.Transport.ArrivalTime;
-            NumberOfSeat = TransportPlace.Number;
-            Price = TransportPlace.Price;
-            this.PassangerName = PassangerName;
-            this.PassangerSurname = PassangerSurname;
-        }
-
         public int Id { get; set; }
         public string TransportType { get; set; }
         public string DeparturePoint { get; set; }

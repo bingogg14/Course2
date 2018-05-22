@@ -10,7 +10,7 @@ namespace DAL
 {
     public class ManagementContext : DbContext
     {
-        public ManagementContext() { }
+        public ManagementContext():base("ManagementContext") { }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<HotelRoom> HotelRooms { get; set; }
         public DbSet<Tour> TourTemplates { get; set; }

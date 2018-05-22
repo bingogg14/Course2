@@ -8,12 +8,22 @@ using Logic.DTOs;
 using Logic;
 using WebUI.Models;
 using AutoMapper;
+using WebUI.Ninject;
 
 namespace WebUI.Controllers
 {
     public class HotelController : ApiController
     {
-        HotelLogic HotelLogic = new HotelLogic();
+        public HotelController()
+        {
+            HotelLogic = UIDependencyResolver<IHotelLogic>.ResolveDependency();
+        }
+        public HotelController(IHotelLogic HotelLogic)
+        {
+            this.HotelLogic = HotelLogic;
+        }
+
+        IHotelLogic HotelLogic;
 
         IMapper HotelControllerMapper = new MapperConfiguration(cfg =>
             {

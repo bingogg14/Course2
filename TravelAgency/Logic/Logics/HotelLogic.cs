@@ -7,6 +7,7 @@ using DAL;
 using DAL.Entities;
 using Logic.DTOs;
 using AutoMapper;
+using Logic.Exceptions;
 
 namespace Logic
 {
@@ -42,16 +43,22 @@ namespace Logic
 
         public void AddHotel(HotelDTO NewHotel)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             UoW.Hotels.Add(HotelLogicMapper.Map<HotelDTO, Hotel>(NewHotel));
         }
 
         public void DeleteHotel(int Id)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             UoW.Hotels.Delete(Id);
         }
 
         public void AddHotelRoom(int HotelId, HotelRoomDTO NewHotelRoom)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             Hotel hotel = UoW.Hotels.GetAll(x => x.Id == HotelId, x => x.Rooms).FirstOrDefault();
             HotelRoom room = HotelLogicMapper.Map<HotelRoomDTO, HotelRoom>(NewHotelRoom);
             room.Hotel = hotel;

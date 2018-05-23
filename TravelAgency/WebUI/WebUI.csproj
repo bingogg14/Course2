@@ -25,7 +25,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -246,7 +245,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
-    <Compile Include="Controllers\MVC\HotelModelsController.cs" />
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="Controllers\TransportController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -326,15 +324,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\HotelModels\Create.cshtml" />
-    <Content Include="Views\HotelModels\Delete.cshtml" />
-    <Content Include="Views\HotelModels\Details.cshtml" />
-    <Content Include="Views\HotelModels\Edit.cshtml" />
-    <Content Include="Views\HotelModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\HotelMVC\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

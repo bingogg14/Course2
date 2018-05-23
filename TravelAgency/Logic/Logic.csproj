@@ -61,6 +61,7 @@
     <Compile Include="DTOs\TransportPlaceDTO.cs" />
     <Compile Include="DTOs\TransportTicketDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
+    <Compile Include="Exceptions\WrongUserException.cs" />
     <Compile Include="Logics\HotelLogic.cs" />
     <Compile Include="Interfaces\IHotelLogic.cs" />
     <Compile Include="Exceptions\InvalidLoginPasswordCombinationException.cs" />

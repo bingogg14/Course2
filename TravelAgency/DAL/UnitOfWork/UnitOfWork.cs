@@ -24,6 +24,7 @@ namespace DAL
             this.UsageContext = UsageContext;
         }
 
+
         private IRepository<Hotel> _hotels;
         private IRepository<HotelRoom> _hotelsrooms;
         private IRepository<Tour> _tourstemplates;

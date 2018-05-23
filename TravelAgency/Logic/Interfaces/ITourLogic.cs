@@ -15,9 +15,7 @@ namespace Logic
         TourDTO GetTour(int Id);
         void DeleteTour(int Id);
         IEnumerable<TourDTO> FindTourTemplatesByPrice(int MinPrice, int MaxPrice);
-        IEnumerable<TourDTO> FindTourTemplatesByType(string Type);
-        IEnumerable<TourDTO> FindTourTemplatesByCity(string City);
-        IEnumerable<TourDTO> FindTourTemplatesByCountry(string Country);
+        IEnumerable<TourDTO> FindTourTemplates(string SeachElem);
         IEnumerable<TourDTO> FindTourTemplatesByDuration(int MinDuration, int MaxDuration);
         IEnumerable<TourDTO> GetAllToursTemplatesOrderedByPrice();
         IEnumerable<TourDTO> GetAllToursTemplatesOrderedByDuration();

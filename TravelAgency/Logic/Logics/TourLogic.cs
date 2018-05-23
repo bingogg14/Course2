@@ -7,6 +7,7 @@ using DAL;
 using DAL.Entities;
 using Logic.DTOs;
 using AutoMapper;
+using Logic.Exceptions;
 
 namespace Logic
 {
@@ -38,16 +39,22 @@ namespace Logic
 
         public void AddTour(TourDTO NewTour)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             UoW.ToursTemplates.Add(TourLogicMapper.Map<TourDTO, Tour>(NewTour));
         }
 
         public void DeleteTour(int Id)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             UoW.ToursTemplates.Delete(Id);
         }
 
         public void EditTour(int Id, TourDTO Tour)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             Tour tour = UoW.ToursTemplates.Get(Id);
             tour = TourLogicMapper.Map<TourDTO, Tour>(Tour);
             UoW.ToursTemplates.Modify(Id, tour);
@@ -63,11 +70,11 @@ namespace Logic
             return TourLogicMapper.Map<IEnumerable<Tour>, List<TourDTO>>(UoW.ToursTemplates.GetAll(t => t.Price >= MinPrice && t.Price <= MaxPrice));
         }
 
-        public IEnumerable<TourDTO> FindTourTemplatesByType(string Type)
+        public IEnumerable<TourDTO> FindTourTemplates(string SeachElem)
         {
-            return TourLogicMapper.Map<IEnumerable<Tour>, List<TourDTO>>(UoW.ToursTemplates.GetAll(t => t.Type == Type));
+            return TourLogicMapper.Map<IEnumerable<Tour>, List<TourDTO>>(UoW.ToursTemplates.GetAll(t => t.Type == SeachElem || t.City == SeachElem || t.Country == SeachElem || t.Name == SeachElem));
         }
-
+        /*
         public IEnumerable<TourDTO> FindTourTemplatesByCity(string City)
         {
             return TourLogicMapper.Map<IEnumerable<Tour>, List<TourDTO>>(UoW.ToursTemplates.GetAll(t => t.City == City));
@@ -76,7 +83,7 @@ namespace Logic
         public IEnumerable<TourDTO> FindTourTemplatesByCountry(string Country)
         {
             return TourLogicMapper.Map<IEnumerable<Tour>, List<TourDTO>>(UoW.ToursTemplates.GetAll(t => t.Country == Country));
-        }
+        }*/
 
         public IEnumerable<TourDTO> FindTourTemplatesByDuration(int MinDuration, int MaxDuration)
         {

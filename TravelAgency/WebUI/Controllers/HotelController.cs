@@ -9,13 +9,16 @@ using Logic;
 using WebUI.Models;
 using AutoMapper;
 using WebUI.Ninject;
+using System.Web;
+using Microsoft.Owin.Host.SystemWeb;
+
 
 namespace WebUI.Controllers
 {
     public class HotelController : ApiController
     {
         public HotelController()
-        {
+        {          
             HotelLogic = UIDependencyResolver<IHotelLogic>.ResolveDependency();
         }
         public HotelController(IHotelLogic HotelLogic)
@@ -34,6 +37,7 @@ namespace WebUI.Controllers
             }).CreateMapper();
 
         // GET api/<controller>
+        [Authorize]
         public IEnumerable<HotelModel> Get()
         {
             return HotelControllerMapper.Map<IEnumerable<HotelDTO>, IEnumerable<HotelModel>>(HotelLogic.GetAllHotels());
@@ -46,6 +50,7 @@ namespace WebUI.Controllers
         }
 
         // POST api/<controller>
+
         public void Post([FromBody]HotelModel Hotel)
         {
             HotelLogic.AddHotel(HotelControllerMapper.Map<HotelModel, HotelDTO>(Hotel));

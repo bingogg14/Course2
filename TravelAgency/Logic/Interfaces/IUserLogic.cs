@@ -14,10 +14,9 @@ namespace Logic
         UserDTO GetUser(int Id);
         void DeleteUser(int Id);
         void EditUser(int Id, UserDTO User);
-        UserDTO Enter(string Login, string Password);
+        UserDTO Login(string Login, string Password);
         void ReserveTour(int UserId, int TourId);
         void ReserveRoom(int UserId, int HotelId, int HotelRoomId, DateTimeOffset ArrivalDate, DateTimeOffset DepartureDate);
         void ReserveTicket(int UserId, int TransportId, int SeatNumber);
-
     }
 }

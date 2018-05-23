@@ -7,6 +7,7 @@ using DAL;
 using DAL.Entities;
 using Logic.DTOs;
 using AutoMapper;
+using Logic.Exceptions;
 
 namespace Logic
 {
@@ -42,6 +43,8 @@ namespace Logic
 
         public void AddTransport(TransportDTO NewTransport, int AvailibleSeats, int PriceForTicket)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             for (int i = 1; i <= AvailibleSeats; i++)
                 NewTransport.TransportPlaces.Add(new TransportPlaceDTO(NewTransport, i, PriceForTicket));
             UoW.Transports.Add(TransportLogicMapper.Map<TransportDTO, Transport>(NewTransport));
@@ -49,6 +52,8 @@ namespace Logic
 
         public void DeleteTransport(int Id)
         {
+            if (UserLogic.CurrentUser == null || UserLogic.CurrentUser.UserType != DTOs.UserType.Manager)
+                throw new WrongUserException("Function availible only for managers");
             UoW.Transports.Delete(Id);
         }
 

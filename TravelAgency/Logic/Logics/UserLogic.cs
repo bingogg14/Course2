@@ -7,11 +7,17 @@ using DAL;
 using DAL.Entities;
 using Logic.DTOs;
 using AutoMapper;
+using Logic.Exceptions;
 
 namespace Logic
 {
     public class UserLogic : IUserLogic
     {
+        static UserLogic()
+        {
+            CurrentUser = null;
+        }
+
         IUnitOfWork UoW;
 
         public UserLogic(IUnitOfWork UoW)
@@ -41,7 +47,7 @@ namespace Logic
 
         IMapper UserLogicMapper;
         IMapper HotelRoomToDto;
-
+        public static UserDTO CurrentUser;
         public UserLogic()
         {
             UserLogicMapper = new MapperConfiguration(cfg =>
@@ -68,6 +74,8 @@ namespace Logic
 
         public void AddUser(UserDTO NewUser)
         {
+            if (UoW.Users.GetAll(u => u.Login == NewUser.Login).Count() != 0)
+                throw new InvalidLoginPasswordCombinationException("Entered login is already taken");
             UoW.Users.Add(UserLogicMapper.Map<UserDTO, User>(NewUser));
         }
 
@@ -91,16 +99,24 @@ namespace Logic
             UoW.Users.Delete(Id);
         }
 
-        public UserDTO Enter(string Login, string Password)
+        public UserDTO Login(string Login, string Password)
         {
             UserDTO user = UserLogicMapper.Map<User, UserDTO>(UoW.Users.GetAll(u => u.Login == Login && u.Password == Password, u => u.TransportTickets, u => u.Tours, u => u.HotelRoomReservations).FirstOrDefault());
             if (user == null)
                 throw new InvalidLoginPasswordCombinationException("Invalid login password combination");
+            CurrentUser = user;
             return user;
+        }
+
+        public void Logout()
+        {
+            CurrentUser = null;
         }
 
         public void ReserveTour(int UserId, int TourId)
         {
+            if (CurrentUser == null)
+                throw new WrongUserException("Login to reserve tour");
             Tour tour = UoW.ToursTemplates.Get(TourId);
             User user = UoW.Users.GetAll(u => u.Id == UserId, u => u.Tours).FirstOrDefault();
             user.Tours.Add(tour);
@@ -109,6 +125,8 @@ namespace Logic
 
         public void ReserveRoom(int UserId, int HotelId, int HotelRoomId, DateTimeOffset ArrivalDate, DateTimeOffset DepartureDate)
         {
+            if (CurrentUser == null)
+                throw new WrongUserException("Login to reserve room");
             User user = UoW.Users.GetAll(u => u.Id == UserId, u => u.HotelRoomReservations).FirstOrDefault();
             HotelRoom hotelroom = UoW.Hotels.GetAll(h => h.Id == HotelId, h => h.Rooms).FirstOrDefault().Rooms.FirstOrDefault(r => r.Id == HotelRoomId);
 
@@ -137,6 +155,8 @@ namespace Logic
 
         public void ReserveTicket(int UserId, int TransportId, int SeatNumber)
         {
+            if (CurrentUser == null)
+                throw new WrongUserException("Login to reserve ticket");
             User user = UoW.Users.Get(UserId);
             Transport transport = UoW.Transports.GetAll(t => t.Id == TransportId, t => t.TransportPlaces).FirstOrDefault();
             TransportPlace transportplace = transport.TransportPlaces.FirstOrDefault(p => p.Number == SeatNumber);

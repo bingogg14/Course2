@@ -14,5 +14,6 @@ namespace WebUI
         {
             ConfigureAuth(app);
         }
+
     }
 }

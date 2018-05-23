@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -18,5 +19,10 @@ namespace DAL.Entities
         public int SleepingPlaces { get; set; }
         public int Price { get; set; }
         public List<DateTimeOffset> BookedDays { get; set; }
+    }
+
+    public class HotelRoomDBContext : DbContext
+    {
+        public DbSet<HotelRoom> HotelRoom { get; set; }
     }
 }

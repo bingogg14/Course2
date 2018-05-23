@@ -29,5 +29,9 @@ namespace WebUI.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebUI.Models.HotelModel> HotelModels { get; set; }
+
+        public System.Data.Entity.DbSet<WebUI.Models.HotelRoomModel> HotelRoomModels { get; set; }
     }
 }

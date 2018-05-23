@@ -21,6 +21,6 @@ namespace Logic
         IEnumerable<TourDTO> FindTourTemplatesByDuration(int MinDuration, int MaxDuration);
         IEnumerable<TourDTO> GetAllToursTemplatesOrderedByPrice();
         IEnumerable<TourDTO> GetAllToursTemplatesOrderedByDuration();
-        IEnumerable<TourDTO> GetAllToursTemplatesOrderedByCountry()
+        IEnumerable<TourDTO> GetAllToursTemplatesOrderedByCountry();
     }
 }

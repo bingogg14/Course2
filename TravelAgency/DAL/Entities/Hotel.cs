@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DAL.Entities
 {
@@ -13,5 +15,10 @@ namespace DAL.Entities
         public int Stars { get; set; }
         public virtual List<HotelRoom> Rooms { get; set; }
         public string Address { get; set; }
+    }
+
+    public class HotelDBContext : DbContext
+    {
+        public DbSet<Hotel> Hotel { get; set; }
     }
 }
